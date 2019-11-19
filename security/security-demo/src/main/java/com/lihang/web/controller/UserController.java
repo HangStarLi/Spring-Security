@@ -7,9 +7,11 @@ import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,6 +44,16 @@ public class UserController {
         System.out.println(id);
         User user = new User();
         user.setUsername("tom");
+        return user;
+    }
+
+    @PostMapping
+    public User createUser(@Valid  @RequestBody User user, BindingResult errors){
+        if (errors.hasErrors()){
+            errors.getAllErrors().stream().forEach(error -> System.out.println(error.getDefaultMessage()));
+        }
+        System.out.println(ReflectionToStringBuilder.toString(user,ToStringStyle.MULTI_LINE_STYLE));
+
         return user;
     }
 }
