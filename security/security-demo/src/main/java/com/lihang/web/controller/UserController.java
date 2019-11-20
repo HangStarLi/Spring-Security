@@ -3,6 +3,7 @@ package com.lihang.web.controller;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.lihang.dto.User;
 import com.lihang.dto.UserQueryCondition;
+import com.lihang.exception.UserNotExitException;
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.springframework.data.domain.Pageable;
@@ -42,7 +43,10 @@ public class UserController {
     @GetMapping("/{id:\\d+}")
     @JsonView(User.UserDetailView.class)
     public User getUserInfoTest(@PathVariable Integer id){
-        System.out.println(id);
+        if (id<0)
+            throw new UserNotExitException(id+"");
+
+        System.out.println(id+":进入服务");
         User user = new User();
         user.setUsername("tom");
         return user;
@@ -73,4 +77,13 @@ public class UserController {
     public void deleteUser(@PathVariable Integer id){
         System.out.println(id);
     }
+
+    /*
+    * 测试自定义异常
+    * */
+/*    @GetMapping("/{id:\\d+}")
+    @JsonView(User.UserDetailView.class)
+    public User getUserInfoTestException(@PathVariable Integer id){
+       throw new UserNotExitException(id+"");
+    }*/
 }
