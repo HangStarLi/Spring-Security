@@ -1,8 +1,11 @@
-package com.lihang.web.dto;
+package com.lihang.dto;
 
 import com.fasterxml.jackson.annotation.JsonView;
+import com.lihang.volidator.MyConstraint;
 import org.hibernate.validator.constraints.NotBlank;
 
+import javax.validation.constraints.Digits;
+import javax.validation.constraints.Past;
 import java.util.Date;
 
 public class User {
@@ -13,10 +16,13 @@ public class User {
     }
 
     private Integer id;
+    @MyConstraint
     private String username;
     @NotBlank
     private String password;
+    @Digits(integer = 10, fraction =1)
     private Integer age;
+    @Past
     private Date birthday;
 
     @JsonView(UserSimpleView.class)

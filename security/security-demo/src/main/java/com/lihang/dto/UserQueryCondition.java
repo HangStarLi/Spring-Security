@@ -1,6 +1,4 @@
-package com.lihang.web.dto;
-
-import javax.jnlp.IntegrationService;
+package com.lihang.dto;
 
 public class UserQueryCondition {
     private String username;

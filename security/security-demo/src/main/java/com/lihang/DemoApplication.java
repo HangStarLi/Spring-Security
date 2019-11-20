@@ -1,4 +1,4 @@
-package com.lihang.web;
+package com.lihang;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
