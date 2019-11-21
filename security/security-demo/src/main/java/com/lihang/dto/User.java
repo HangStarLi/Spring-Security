@@ -2,6 +2,7 @@ package com.lihang.dto;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.lihang.volidator.MyConstraint;
+import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.validation.constraints.Digits;
@@ -14,10 +15,12 @@ public class User {
 
     public interface UserDetailView extends UserSimpleView {
     }
-
+    @ApiModelProperty(value = "用户id")
     private Integer id;
+    @ApiModelProperty(value = "用户名")
     @MyConstraint
     private String username;
+    @ApiModelProperty(value = "用户密码")
     @NotBlank
     private String password;
     @Digits(integer = 10, fraction =1)

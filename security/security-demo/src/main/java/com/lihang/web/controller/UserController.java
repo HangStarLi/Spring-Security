@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonView;
 import com.lihang.dto.User;
 import com.lihang.dto.UserQueryCondition;
 import com.lihang.exception.UserNotExitException;
+import io.swagger.annotations.*;
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.springframework.data.domain.Pageable;
@@ -19,10 +20,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/user")
+@Api(tags = "用户数据接口")
 public class UserController {
 
     //@RequestMapping(value = "/user",method = RequestMethod.GET)
     //@GetMapping("/user")
+    @ApiOperation(value="查询用户",notes = "查询所有")
     @GetMapping
     @JsonView(User.UserSimpleView.class)
     public List<User> getUser(UserQueryCondition condition,@PageableDefault(size = 5,page = 1,sort = "age,asc") Pageable pageable){
@@ -40,6 +43,8 @@ public class UserController {
 
    // @RequestMapping(value = "/user/{id:\\d+}",method = RequestMethod.GET)//注意反斜杠\\
     //@GetMapping("/user/{id:\\d+}")
+    @ApiOperation(value="查询用户详情",notes = "根据用户ID查询")
+    @ApiImplicitParam(paramType = "path",name = "id",value = "用户ID",required = true)
     @GetMapping("/{id:\\d+}")
     @JsonView(User.UserDetailView.class)
     public User getUserInfoTest(@PathVariable Integer id){
@@ -72,9 +77,13 @@ public class UserController {
         }
         System.out.println(ReflectionToStringBuilder.toString(user,ToStringStyle.MULTI_LINE_STYLE));
     }
-
+    @ApiResponses({
+            @ApiResponse(code=200,message = "删除成功"),
+            @ApiResponse(code=500,message = "删除失败"),
+    })
+    @ApiOperation(value="删除用户",notes = "通过用户id删除")
     @DeleteMapping("/{id:\\d+}")
-    public void deleteUser(@PathVariable Integer id){
+    public void deleteUser(@ApiParam("用户id") @PathVariable Integer id){
         System.out.println(id);
     }
 

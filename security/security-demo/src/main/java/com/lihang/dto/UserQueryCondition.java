@@ -1,8 +1,13 @@
 package com.lihang.dto;
 
+import io.swagger.annotations.ApiModelProperty;
+
 public class UserQueryCondition {
+    @ApiModelProperty(value = "用户名")
     private String username;
+    @ApiModelProperty(value = "用户年龄范围起始值")
     private Integer age;
+    @ApiModelProperty(value = "用户年龄范围终止值")
     private Integer  ageTo;
 
     public String getUsername() {
