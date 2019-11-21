@@ -11,19 +11,19 @@ import java.util.Date;
 public class TimeFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("time filter init");
+        System.out.println("filter: time filter init");
     }
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println("time filter start");
+        System.out.println("filter: time filter start");
         long start = new Date().getTime();
         filterChain.doFilter(request,response);
         long end = new Date().getTime();
-        System.out.println("time filter: " + (end-start));
-        System.out.println("time filter end");
+        System.out.println("filter: time filter: " + (end-start));
+        System.out.println("filter: time filter end");
     }
     @Override
     public void destroy() {
-        System.out.println("time filter destroy");
+        System.out.println("intercepter:  time filter destroy");
     }
 }
