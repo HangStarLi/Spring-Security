@@ -1,0 +1,17 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.lihang.security.core.properties.SecurityProperties",
+      "name": "lihang.security",
+      "type": "com.lihang.security.core.properties.SecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.lihang.security.core.properties.SecurityProperties",
+      "name": "lihang.security.browser",
+      "type": "com.lihang.security.core.properties.BrowserProperties"
+    }
+  ]
+}
