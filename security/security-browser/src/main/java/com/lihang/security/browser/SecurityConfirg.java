@@ -3,6 +3,7 @@ package com.lihang.security.browser;
 import com.lihang.security.browser.authentication.MyAuthenticationFailureHandler;
 import com.lihang.security.browser.authentication.MyAuthenticationSuccessHandler;
 import com.lihang.security.core.properties.SecurityProperties;
+import com.lihang.security.core.validate.code.ValidateCodeFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +13,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 public class SecurityConfirg extends WebSecurityConfigurerAdapter {
@@ -29,14 +31,20 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.formLogin()//表单登陆
-                .loginPage("/authentication/require")
-                .loginProcessingUrl("/authentication/form")
+        ValidateCodeFilter validateCodeFilter = new ValidateCodeFilter();
+        validateCodeFilter.setAuthenticationFailureHandler(myAuthenticationFailureHandler);
+        http.addFilterBefore(validateCodeFilter,UsernamePasswordAuthenticationFilter.class)
+                .formLogin()//表单登陆
+                .loginPage("/authentication/require")//登陆请求
+                .loginProcessingUrl("/authentication/form")//表单中的提交URL
                 .successHandler(myAuthenticationSuccessHandler)
                 .failureHandler(myAuthenticationFailureHandler)
                 .and()
                 .authorizeRequests()
-                .antMatchers("/authentication/require",securityProperties.getBrowser().getLoginPage()).permitAll()
+                .antMatchers("/authentication/require"
+                        ,securityProperties.getBrowser().getLoginPage()
+                        ,"/code/image"
+                            ).permitAll()//跳过这些请求，不验证
                 .anyRequest()
                 .authenticated()
                 .and().csrf().disable();

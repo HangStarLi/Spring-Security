@@ -1,6 +1,7 @@
 package com.lihang.security.browser.authentication;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.lihang.security.browser.support.SimpleResponse;
 import com.lihang.security.core.properties.LoginResponseType;
 import com.lihang.security.core.properties.SecurityProperties;
 import org.slf4j.Logger;
@@ -30,7 +31,7 @@ public class MyAuthenticationFailureHandler extends SimpleUrlAuthenticationFailu
             response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
             response.setContentType("application/json;charset=utf-8");
             //System.out.println(objectMapper.writeValueAsString(authentication));
-            response.getWriter().write(objectMapper.writeValueAsString(e));
+            response.getWriter().write(objectMapper.writeValueAsString(new SimpleResponse(e.getMessage())));
             System.out.println("json");
         }else{
             super.onAuthenticationFailure(request,response,e);

@@ -9,6 +9,8 @@ import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
@@ -95,4 +97,12 @@ public class UserController {
     public User getUserInfoTestException(@PathVariable Integer id){
        throw new UserNotExitException(id+"");
     }*/
+/*
+* 获取当前登陆用户的信息
+*  public Object getCurrentUserDetail(Authentication authentication)
+* */
+   @GetMapping("/detail")
+    public Object getCurrentUserDetail(@AuthenticationPrincipal UserDetails userDetails){
+       return userDetails;
+   }
 }
