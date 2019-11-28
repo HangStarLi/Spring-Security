@@ -6,6 +6,15 @@ import sun.security.util.SecurityConstants;
 public class BrowserProperties {
     private String loginPage = "/defaultLogin.html";
     private LoginResponseType loginType = LoginResponseType.JSON;
+    private int remermberMeSeconds = 3600;
+
+    public int getRemermberMeSeconds() {
+        return remermberMeSeconds;
+    }
+
+    public void setRemermberMeSeconds(int remermberMeSeconds) {
+        this.remermberMeSeconds = remermberMeSeconds;
+    }
 
     public LoginResponseType getLoginType() {
         return loginType;
