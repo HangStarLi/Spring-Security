@@ -2,8 +2,11 @@ package com.lihang.security.browser;
 
 import com.lihang.security.browser.authentication.MyAuthenticationFailureHandler;
 import com.lihang.security.browser.authentication.MyAuthenticationSuccessHandler;
+import com.lihang.security.core.authentication.mobile.SmsCodeAuthenticationFilter;
+import com.lihang.security.core.authentication.mobile.SmsCodeAuthenticationSecurityConfig;
 import com.lihang.security.core.properties.SecurityProperties;
 import com.lihang.security.core.validate.code.ValidateCodeFilter;
+import com.lihang.security.core.validate.code.sms.SmsValidateCodeFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -33,6 +36,8 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
     private MyAuthenticationFailureHandler myAuthenticationFailureHandler;
     @Autowired
     private UserDetailsService userDetailsService;
+    @Autowired
+    private SmsCodeAuthenticationSecurityConfig smsCodeAuthenticationSecurityConfig;
     @Bean
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
@@ -50,7 +55,14 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
         validateCodeFilter.setAuthenticationFailureHandler(myAuthenticationFailureHandler);
         validateCodeFilter.setSecurityProperties(securityProperties);
         validateCodeFilter.afterPropertiesSet();
-        http.addFilterBefore(validateCodeFilter,UsernamePasswordAuthenticationFilter.class)
+
+        SmsValidateCodeFilter smsValidateCodeFilter = new SmsValidateCodeFilter();
+        smsValidateCodeFilter.setAuthenticationFailureHandler(myAuthenticationFailureHandler);
+        smsValidateCodeFilter.setSecurityProperties(securityProperties);
+        smsValidateCodeFilter.afterPropertiesSet();
+
+        http.addFilterBefore(smsValidateCodeFilter,UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(validateCodeFilter,UsernamePasswordAuthenticationFilter.class)
           .formLogin()//表单登陆
                 .loginPage("/authentication/require")//登陆请求
                 .loginProcessingUrl("/authentication/form")//表单中的提交URL
@@ -62,14 +74,15 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
                 .tokenValiditySeconds(securityProperties.getBrowser().getRemermberMeSeconds())
                 .userDetailsService(userDetailsService)
                 .and()
-                .authorizeRequests()
+            .authorizeRequests()
                 .antMatchers("/authentication/require"
                         ,securityProperties.getBrowser().getLoginPage()
                         ,"/code/*"
                             ).permitAll()//跳过这些请求，不验证
                 .anyRequest()
                 .authenticated()
-                .and().csrf().disable();
+                .and().csrf().disable()
+        .apply(smsCodeAuthenticationSecurityConfig);
  /*       http.httpBasic()//默认普通登陆
                 .and()
                 .authorizeRequests()

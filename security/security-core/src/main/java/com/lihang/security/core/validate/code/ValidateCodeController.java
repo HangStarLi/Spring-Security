@@ -26,20 +26,21 @@ public class ValidateCodeController {
 
     @Autowired
     private SmsCodeSender smsCodeSender;
+    //存入Session的key
+    public static final String SESSION_KEY_PREFIX= "SESSION_KEY_CODE_";
 
-    public static final String SESSION_KEY = "SESSION_KEY_CODE";
     private SessionStrategy sessionStrategy = new HttpSessionSessionStrategy();
     @GetMapping("/code/image")
     public void createCode(HttpServletRequest request, HttpServletResponse response) throws IOException {
         ImageCode imageCode = (ImageCode) imageCodeGenerator.generate(new ServletWebRequest(request));
-        sessionStrategy.setAttribute(new ServletWebRequest((request)),SESSION_KEY,imageCode);
+        sessionStrategy.setAttribute(new ServletWebRequest((request)),SESSION_KEY_PREFIX+"IMG",imageCode);
         ImageIO.write(imageCode.getImage(),"JPEG",response.getOutputStream());
     }
 
     @GetMapping("/code/sms")
     public void createCodeSMS(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletRequestBindingException {
         ValidateCode smsCode = smsCodeGenerator.generate(new ServletWebRequest(request));
-        sessionStrategy.setAttribute(new ServletWebRequest((request)), SESSION_KEY, smsCode);
+        sessionStrategy.setAttribute(new ServletWebRequest((request)), SESSION_KEY_PREFIX+"SMS", smsCode);
         String mobile = ServletRequestUtils.getRequiredStringParameter(request, "mobile");
         smsCodeSender.send(mobile, smsCode.getCode());
     }
