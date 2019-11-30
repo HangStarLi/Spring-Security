@@ -1,8 +1,9 @@
-package com.lihang.security.core.validate.code.impl;
+package com.lihang.security.core.validate.code.image;
 
 import com.lihang.security.core.properties.SecurityProperties;
-import com.lihang.security.core.validate.code.ImageCode;
 import com.lihang.security.core.validate.code.ValidateCodeGenerator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.ServletRequestUtils;
 import org.springframework.web.context.request.ServletWebRequest;
 
@@ -10,13 +11,16 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.Random;
 
-public class ImageCodeGenerator implements ValidateCodeGenerator {
+public class ImageValidateCodeGenerator implements ValidateCodeGenerator {
 
     private SecurityProperties securityProperties;
     @Override
     public ImageCode generate(ServletWebRequest request) {
-        int width = ServletRequestUtils.getIntParameter(request.getRequest(),"width",securityProperties.getCode().getImage().getWidth());
-        int height = ServletRequestUtils.getIntParameter(request.getRequest(),"height",securityProperties.getCode().getImage().getHeight());
+        System.out.println("generate");
+        int width = ServletRequestUtils.getIntParameter(request.getRequest(), "width",
+                securityProperties.getCode().getImage().getWidth());
+        int height = ServletRequestUtils.getIntParameter(request.getRequest(), "height",
+                securityProperties.getCode().getImage().getHeight());
         BufferedImage image = new BufferedImage(width,height,BufferedImage.TYPE_INT_RGB);
         Graphics g = image.getGraphics();
         Random random = new Random();

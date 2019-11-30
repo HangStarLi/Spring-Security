@@ -1,4 +1,6 @@
-package com.lihang.security.core.validate.code;
+package com.lihang.security.core.validate.code.image;
+
+import com.lihang.security.core.validate.code.ValidateCode;
 
 import java.awt.image.BufferedImage;
 
