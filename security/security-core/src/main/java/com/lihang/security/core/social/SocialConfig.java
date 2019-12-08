@@ -1,4 +1,4 @@
-package com.lihang.security.core.social.qq;
+package com.lihang.security.core.social;
 
 import com.lihang.security.core.properties.SecurityProperties;
 import com.lihang.security.core.social.MySpringSocialConfigurer;

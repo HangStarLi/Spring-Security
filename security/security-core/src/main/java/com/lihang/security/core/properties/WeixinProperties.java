@@ -1,10 +1,12 @@
-
+/**
+ * 
+ */
 package com.lihang.security.core.properties;
 
 import org.springframework.boot.autoconfigure.social.SocialProperties;
 
 /**
- * @author 李航
+ * @author zhailiang
  *
  */
 public class WeixinProperties extends SocialProperties {

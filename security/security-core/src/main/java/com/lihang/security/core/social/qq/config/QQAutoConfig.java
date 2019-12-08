@@ -31,7 +31,7 @@ public class QQAutoConfig extends SocialAutoConfigurerAdapter {
     }
     @Override
     public UsersConnectionRepository getUsersConnectionRepository(ConnectionFactoryLocator connectionFactoryLocator) {
-        JdbcUsersConnectionRepository repository = new JdbcUsersConnectionRepository(dataSource,connectionFactoryLocator,Encryptors.noOpText());
+        MyJdbcUsersConnectionRepository repository = new MyJdbcUsersConnectionRepository(dataSource,connectionFactoryLocator,Encryptors.noOpText());
         repository.setTablePrefix("my_");
         if (connectionSignUp != null){
             repository.setConnectionSignUp(connectionSignUp);
