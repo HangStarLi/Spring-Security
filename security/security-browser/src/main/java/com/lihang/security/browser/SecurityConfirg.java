@@ -18,6 +18,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
+import org.springframework.social.security.SpringSocialConfigurer;
 
 import javax.sql.DataSource;
 
@@ -28,15 +29,14 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
     @Autowired
     private SecurityProperties securityProperties;
     @Autowired
-    private MyAuthenticationSuccessHandler myAuthenticationSuccessHandler;
-    @Autowired
     private DataSource dataSource;
-    @Autowired
-    private MyAuthenticationFailureHandler myAuthenticationFailureHandler;
     @Autowired
     private UserDetailsService userDetailsService;
     @Autowired
     private SmsCodeAuthenticationSecurityConfig smsCodeAuthenticationSecurityConfig;
+    @Autowired
+    private SpringSocialConfigurer mySocialConfig;
+
     @Bean
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
@@ -50,19 +50,12 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
     }
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-
-
-
-
+        System.out.println(securityProperties.getSocial().getQq().getProviderId()+"++++++++++++++++++++");
         http.apply(validateCodeSecurityConfig)
                 .and()
              .apply(smsCodeAuthenticationSecurityConfig)
                 .and()
-          .formLogin()//表单登陆
-                .loginPage("/authentication/require")//登陆请求
-                .loginProcessingUrl("/authentication/form")//表单中的提交URL
-                .successHandler(myAuthenticationSuccessHandler)
-                .failureHandler(myAuthenticationFailureHandler)
+                .apply(mySocialConfig)
                 .and()
            .rememberMe()
                 .tokenRepository(persistentTokenRepository())
@@ -73,7 +66,9 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
                 .antMatchers(SecurityConstants.DEFAULT_UNAUTHENTICATION_URL,
                         SecurityConstants.DEFAULT_LOGIN_PROCESSING_URL_MOBILE,
                         securityProperties.getBrowser().getLoginPage(),
-                        SecurityConstants.DEFAULT_VALIDATE_CODE_URL_PREFIX+"/*"
+                        SecurityConstants.DEFAULT_VALIDATE_CODE_URL_PREFIX+"/*",
+                        securityProperties.getBrowser().getSignUpUrl(),
+                        "/user/regist"
                 ).permitAll()//跳过这些请求，不验证
                 .anyRequest()
                 .authenticated()

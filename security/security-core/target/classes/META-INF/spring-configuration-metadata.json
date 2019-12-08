@@ -17,6 +17,11 @@
       "sourceType": "com.lihang.security.core.properties.SecurityProperties",
       "name": "lihang.security.code",
       "type": "com.lihang.security.core.properties.ValidateCodeProperties"
+    },
+    {
+      "sourceType": "com.lihang.security.core.properties.SecurityProperties",
+      "name": "lihang.security.social",
+      "type": "com.lihang.security.core.properties.SocialProperties"
     }
   ]
 }

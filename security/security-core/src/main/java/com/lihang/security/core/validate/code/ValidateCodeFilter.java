@@ -22,7 +22,7 @@ import java.util.Set;
 
 
 /**
- * @author zhailiang
+ * @author lihang
  *
  */
 @Component("validateCodeFilter")

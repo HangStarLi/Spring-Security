@@ -2,6 +2,7 @@ package com.lihang.security.browser;
 
 
 import com.lihang.security.browser.support.SimpleResponse;
+import com.lihang.security.browser.support.SocialUserInfo;
 import com.lihang.security.core.properties.SecurityProperties;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,13 +12,17 @@ import org.springframework.security.web.RedirectStrategy;
 import org.springframework.security.web.savedrequest.HttpSessionRequestCache;
 import org.springframework.security.web.savedrequest.RequestCache;
 import org.springframework.security.web.savedrequest.SavedRequest;
+import org.springframework.social.connect.Connection;
 import org.springframework.social.connect.web.ProviderSignInUtils;
+import org.springframework.social.security.SocialUser;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.context.request.ServletWebRequest;
 import sun.security.util.SecurityConstants;
 
 import javax.servlet.http.HttpServletRequest;
@@ -31,8 +36,8 @@ public class BrowserSecurityController {
     private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
     @Autowired
     private SecurityProperties securityProperties ;
-    /*@Autowired
-    private ProviderSignInUtils providerSignInUtils;*/
+
+
     /*
     * 当需要身份认证时，跳转到这里
     * 请求是否以.html结束如果是就调到自定义登陆页面
@@ -51,5 +56,16 @@ public class BrowserSecurityController {
         }
         return new SimpleResponse("请跳转到登陆页");
     }
-
+    @Autowired
+    private ProviderSignInUtils providerSignInUtils;
+     @GetMapping("/social/user")
+     public SocialUserInfo getSocialUserInfo(HttpServletRequest request){
+         SocialUserInfo socialUserInfo = new SocialUserInfo();
+         Connection<?> connection = providerSignInUtils.getConnectionFromSession(new ServletWebRequest(request));
+         socialUserInfo.setProviderId(connection.getKey().getProviderId());
+         socialUserInfo.setProviderUserId(connection.getKey().getProviderUserId());
+         socialUserInfo.setNickname(connection.getDisplayName());
+         socialUserInfo.setHeadimg(connection.getImageUrl());
+         return socialUserInfo;
+     }
 }

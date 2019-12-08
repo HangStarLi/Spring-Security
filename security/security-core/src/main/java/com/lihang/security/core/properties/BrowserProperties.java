@@ -4,9 +4,18 @@ import org.springframework.boot.autoconfigure.session.SessionProperties;
 import sun.security.util.SecurityConstants;
 
 public class BrowserProperties {
-    private String loginPage = "/defaultLogin.html";
+    private String loginPage = com.lihang.security.core.properties.SecurityConstants.DEFAULT_LOGIN_PAGE_URL;
+    private String signUpUrl = "/defaultRegist.html";
     private LoginResponseType loginType = LoginResponseType.JSON;
     private int remermberMeSeconds = 3600;
+
+    public String getSignUpUrl() {
+        return signUpUrl;
+    }
+
+    public void setSignUpUrl(String signUpUrl) {
+        this.signUpUrl = signUpUrl;
+    }
 
     public int getRemermberMeSeconds() {
         return remermberMeSeconds;
