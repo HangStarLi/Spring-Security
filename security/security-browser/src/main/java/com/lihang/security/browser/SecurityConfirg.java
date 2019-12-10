@@ -2,6 +2,7 @@ package com.lihang.security.browser;
 
 import com.lihang.security.browser.authentication.MyAuthenticationFailureHandler;
 import com.lihang.security.browser.authentication.MyAuthenticationSuccessHandler;
+import com.lihang.security.browser.session.MyExpiredSessionStrategy;
 import com.lihang.security.core.authentication.mobile.SmsCodeAuthenticationSecurityConfig;
 import com.lihang.security.core.properties.SecurityConstants;
 import com.lihang.security.core.properties.SecurityProperties;
@@ -18,6 +19,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
+import org.springframework.security.web.session.InvalidSessionStrategy;
+import org.springframework.security.web.session.SessionInformationExpiredStrategy;
 import org.springframework.social.security.SpringSocialConfigurer;
 
 import javax.sql.DataSource;
@@ -36,7 +39,10 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
     private SmsCodeAuthenticationSecurityConfig smsCodeAuthenticationSecurityConfig;
     @Autowired
     private SpringSocialConfigurer mySocialConfig;
-
+    @Autowired
+    private InvalidSessionStrategy invalidSessionStrategy;
+    @Autowired
+    private SessionInformationExpiredStrategy sessionInformationExpiredStrategy;
     @Bean
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
@@ -56,7 +62,16 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
                 .and()
                 .apply(mySocialConfig)
                 .and()
-           .rememberMe()
+             .sessionManagement()
+                .invalidSessionStrategy(invalidSessionStrategy)
+                //.invalidSessionUrl(securityProperties.getBrowser().getSession().getSessionInvalidUrl())
+                .maximumSessions(securityProperties.getBrowser().getSession().getMaxmumSessions())
+                //session达到最大数量时，阻止后面的用户登陆
+                .maxSessionsPreventsLogin(securityProperties.getBrowser().getSession().getMaxSessionPreventsLogin())
+                .expiredSessionStrategy(sessionInformationExpiredStrategy)
+                .and()
+                .and()
+            .rememberMe()
                 .tokenRepository(persistentTokenRepository())
                 .tokenValiditySeconds(securityProperties.getBrowser().getRemermberMeSeconds())
                 .userDetailsService(userDetailsService)
@@ -67,11 +82,12 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
                         securityProperties.getBrowser().getLoginPage(),
                         SecurityConstants.DEFAULT_VALIDATE_CODE_URL_PREFIX+"/*",
                         securityProperties.getBrowser().getSignUpUrl(),
-                        "/user/regist"
+                        "/user/regist",
+                        securityProperties.getBrowser().getSession().getSessionInvalidUrl()
                 ).permitAll()//跳过这些请求，不验证
-                .anyRequest()
-                .authenticated()
-                .and().csrf().disable();
+               .anyRequest()
+               .authenticated()
+               .and().csrf().disable();
  /*       http.httpBasic()//默认普通登陆
                 .and()
                 .authorizeRequests()

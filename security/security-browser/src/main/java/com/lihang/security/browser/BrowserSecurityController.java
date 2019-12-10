@@ -74,4 +74,14 @@ public class BrowserSecurityController {
          socialUserInfo.setHeadimg(connection.getImageUrl());
          return socialUserInfo;
      }
+
+    /**
+     * Session失效后的提示信息
+     */
+    @GetMapping("/session/invalid")
+    @ResponseStatus(code = HttpStatus.UNAUTHORIZED)
+    public SimpleResponse sessionInvalid(){
+        String message  = "Session已失效，请重新登陆";
+        return new SimpleResponse(message);
+    }
 }
