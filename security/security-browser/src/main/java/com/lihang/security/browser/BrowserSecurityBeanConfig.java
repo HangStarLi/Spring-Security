@@ -18,7 +18,6 @@ public class BrowserSecurityBeanConfig {
     @Bean
     @ConditionalOnMissingBean(InvalidSessionStrategy.class)
     public InvalidSessionStrategy invalidSessionStrategy(){
-        System.out.println("URL:++++++++++"+securityProperties.getBrowser().getSession().getSessionInvalidUrl());
         return new MyInvalidSessionStrategy(securityProperties.getBrowser().getSession().getSessionInvalidUrl());
 
     }

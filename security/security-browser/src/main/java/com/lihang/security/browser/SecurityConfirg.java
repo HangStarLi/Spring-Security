@@ -3,6 +3,7 @@ package com.lihang.security.browser;
 import com.lihang.security.browser.authentication.MyAuthenticationFailureHandler;
 import com.lihang.security.browser.authentication.MyAuthenticationSuccessHandler;
 import com.lihang.security.browser.session.MyExpiredSessionStrategy;
+import com.lihang.security.core.authentication.AbstractChannelSecurityConfig;
 import com.lihang.security.core.authentication.mobile.SmsCodeAuthenticationSecurityConfig;
 import com.lihang.security.core.properties.SecurityConstants;
 import com.lihang.security.core.properties.SecurityProperties;
@@ -26,7 +27,7 @@ import org.springframework.social.security.SpringSocialConfigurer;
 import javax.sql.DataSource;
 
 @Configuration
-public class SecurityConfirg extends WebSecurityConfigurerAdapter {
+public class SecurityConfirg extends AbstractChannelSecurityConfig {
     @Autowired
     private ValidateCodeSecurityConfig validateCodeSecurityConfig;
     @Autowired
@@ -56,6 +57,8 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
     }
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        applyPasswordAuthenticationConfig(http);
+
         http.apply(validateCodeSecurityConfig)
                 .and()
              .apply(smsCodeAuthenticationSecurityConfig)
