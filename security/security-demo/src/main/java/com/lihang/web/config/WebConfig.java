@@ -17,12 +17,12 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Autowired
     TimeInterceptor interceptor;
-
+     //让拦截器生效
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(interceptor);
     }
-
+   //让过滤器生效
     @Bean
     public FilterRegistrationBean timeFilter(){
         FilterRegistrationBean bean = new FilterRegistrationBean();

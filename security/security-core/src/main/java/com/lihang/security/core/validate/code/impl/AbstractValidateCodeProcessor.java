@@ -2,6 +2,8 @@ package com.lihang.security.core.validate.code.impl;
 
 import com.lihang.security.core.validate.code.*;
 import org.apache.commons.lang.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.social.connect.web.HttpSessionSessionStrategy;
 import org.springframework.social.connect.web.SessionStrategy;
@@ -23,12 +25,12 @@ public abstract class AbstractValidateCodeProcessor<C extends ValidateCode> impl
      */
     @Autowired
     private Map<String,ValidateCodeGenerator> validateCodeGeneratorMap ;
-
+    private Logger logger = LoggerFactory.getLogger(getClass());
     @Override
     public void create(ServletWebRequest request) throws IOException, ServletRequestBindingException {
 
          C validateCode = generate(request);
-        System.out.println("2--validateCode:"+validateCode);
+         logger.info("2--validateCode:"+validateCode);
          save(request,validateCode);
          send(request,validateCode);
     }
@@ -41,7 +43,7 @@ public abstract class AbstractValidateCodeProcessor<C extends ValidateCode> impl
       String type = getValidateCodeType(request).toString().toLowerCase();
       String generatorName = type + ValidateCodeGenerator.class.getSimpleName();
       ValidateCodeGenerator validateCodeGenerator = validateCodeGeneratorMap.get(generatorName);
-        System.out.println("3--generatorName:"+generatorName);
+      logger.info("3--generatorName:"+generatorName);
       if (validateCodeGenerator == null) {
           throw new ValidateCodeException("验证码生成器" + generatorName + "不存在");
       }

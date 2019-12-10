@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lihang.security.browser.support.SimpleResponse;
 import com.lihang.security.core.properties.LoginResponseType;
 import com.lihang.security.core.properties.SecurityProperties;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,16 +27,16 @@ public class MyAuthenticationFailureHandler extends SimpleUrlAuthenticationFailu
     private SecurityProperties securityProperties;
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
-        logger.info("登陆失败");
+        logger.error("登陆失败");
         if (LoginResponseType.JSON.equals(securityProperties.getBrowser().getLoginType())){
             response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
             response.setContentType("application/json;charset=utf-8");
-            //System.out.println(objectMapper.writeValueAsString(authentication));
+            //objectMapper.writeValueAsString将一个对象转换为json，SimpleResponse(自己创建的)只输出简单格式的错误
             response.getWriter().write(objectMapper.writeValueAsString(new SimpleResponse(e.getMessage())));
-            System.out.println("json");
+            logger.debug("返回json格式数据");
         }else{
             super.onAuthenticationFailure(request,response,e);
-            System.out.println("redirect");
+            logger.debug("返回默认格式数据redirect");
         }
 
     }

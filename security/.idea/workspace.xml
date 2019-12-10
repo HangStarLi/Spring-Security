@@ -4,18 +4,26 @@
     <list default="true" id="2bf42419-3cdb-415c-a8f1-28d4bd1b8efa" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../SpringSecurity.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringSecurity.ppt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/SocialProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/SocialProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/WeixinProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/SocialConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/SocialConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/QQAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/QQAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/properties/SocialProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/properties/SocialProperties.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/social/qq/SocialConfig$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/social/qq/SocialConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/social/qq/config/QQAutoConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/social/qq/config/QQAutoConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo/src/main/resources/static/demoLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo/src/main/resources/static/demoLogin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-demo/target/classes/static/demoLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo/target/classes/static/demoLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/BrowserSecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/BrowserSecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/SecurityConfirg.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/SecurityConfirg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/authentication/MyAuthenticationFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/authentication/MyAuthenticationFailureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/authentication/MyAuthenticationSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/authentication/MyAuthenticationSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/support/SimpleResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/support/SimpleResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-browser/target/classes/com/lihang/security/browser/BrowserSecurityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-browser/target/classes/com/lihang/security/browser/BrowserSecurityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-browser/target/classes/com/lihang/security/browser/SecurityConfirg.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-browser/target/classes/com/lihang/security/browser/SecurityConfirg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-browser/target/classes/com/lihang/security/browser/authentication/MyAuthenticationFailureHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-browser/target/classes/com/lihang/security/browser/authentication/MyAuthenticationFailureHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-browser/target/classes/com/lihang/security/browser/authentication/MyAuthenticationSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-browser/target/classes/com/lihang/security/browser/authentication/MyAuthenticationSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-browser/target/classes/com/lihang/security/browser/support/SimpleResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-browser/target/classes/com/lihang/security/browser/support/SimpleResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/config/WeixinAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/config/WeixinAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeProcessorHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeProcessorHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/impl/AbstractValidateCodeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/impl/AbstractValidateCodeProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/social/weixin/config/WeixinAutoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/social/weixin/config/WeixinAutoConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/validate/code/ValidateCodeProcessorHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/validate/code/ValidateCodeProcessorHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/validate/code/impl/AbstractValidateCodeProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-core/target/classes/com/lihang/security/core/validate/code/impl/AbstractValidateCodeProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/security/DemoConnectionSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/security/DemoConnectionSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/security/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/security/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security-demo/target/classes/com/lihang/security/DemoConnectionSignUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/security-demo/target/classes/com/lihang/security/DemoConnectionSignUp.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/security-demo/target/" />
@@ -31,110 +39,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyJdbcConnectionRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/MyJdbcConnectionRepository.java">
+      <file leaf-file-name="SimpleResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/support/SimpleResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeixinServiceProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinServiceProvider.java">
+      <file leaf-file-name="BrowserSecurityController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/BrowserSecurityController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="783">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeixinOAuth2Template.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinOAuth2Template.java">
+      <file leaf-file-name="SecurityConfirg.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/SecurityConfirg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+            <state relative-caret-position="405">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Weixin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/api/Weixin.java">
+      <file leaf-file-name="SmsCodeAuthenticationSecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/authentication/mobile/SmsCodeAuthenticationSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="135">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeixinUserInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/api/WeixinUserInfo.java">
+      <file leaf-file-name="ValidateCodeSecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1215">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="135">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeixinAutoConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/config/WeixinAutoConfiguration.java">
+      <file leaf-file-name="ValidateCodeFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="243">
+              <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeixinAccessGrant.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinAccessGrant.java">
+      <file leaf-file-name="ValidateCodeProcessorHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeProcessorHolder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="135">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeixinImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/api/WeixinImpl.java">
+      <file leaf-file-name="SecurityConstants.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/SecurityConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1192">
-              <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-              <folding>
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#975#976#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="432">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyJdbcUsersConnectionRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/MyJdbcUsersConnectionRepository.java">
+      <file leaf-file-name="defaultLogin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/security-browser/src/main/resources/static/defaultLogin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1917">
-              <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QQAutoConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/QQAutoConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-            </state>
-          </provider>
+      <file leaf-file-name="defaultRegist.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/security-browser/src/main/resources/static/defaultRegist.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -166,20 +154,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/impl/AbstractValidateCodeProcessor.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/sms/SmsCodeGenerator.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/image/ImageCodeGenerator.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/sms/SmsValidateCodeGenerator.java" />
-        <option value="$PROJECT_DIR$/security-demo/src/test/java/com/lihang/web/controller/UserControllerTest.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeController.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeProcessorHolder.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/image/ImageValidateCodeGenerator.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeBeanConfig.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/api/QQ.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/connet/QQAdapter.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/connet/QQConnectionFactory.java" />
         <option value="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/MyUserDetailsService.java" />
-        <option value="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/security/MyUserDetailsService.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/SecurityProperties.java" />
         <option value="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/support/SocialUserInfo.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeFilter.java" />
@@ -195,10 +172,7 @@
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/BrowserProperties.java" />
         <option value="$PROJECT_DIR$/security-demo/src/main/resources/static/demoRegist.html" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/connet/QQOAuth2Template.java" />
-        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/BrowserSecurityController.java" />
-        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/SecurityConfirg.java" />
         <option value="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/security/DemoConnectionSignUp.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/SocialConfig.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/WeixinProperties.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/SocialProperties.java" />
@@ -211,12 +185,26 @@
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinAdapter.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinConnectionFactory.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinServiceProvider.java" />
-        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/config/WeixinAutoConfiguration.java" />
         <option value="$PROJECT_DIR$/security-demo/src/main/resources/static/demoLogin.html" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/SocialConfig.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/MyJdbcUsersConnectionRepository.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/QQAutoConfig.java" />
         <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/MyJdbcConnectionRepository.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeProcessorHolder.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/impl/AbstractValidateCodeProcessor.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/SecurityConfirg.java" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/MyConnectionStatusView.java" />
+        <option value="$PROJECT_DIR$/security-demo/src/main/resources/static/bind.html" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/config/WeixinAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/security-demo/src/main/resources/static/nobind.html" />
+        <option value="$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/MyConnectedView.java" />
+        <option value="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/security/DemoConnectionSignUp.java" />
+        <option value="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/security/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/authentication/MyAuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/authentication/MyAuthenticationFailureHandler.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/support/SimpleResponse.java" />
+        <option value="$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/BrowserSecurityController.java" />
       </list>
     </option>
   </component>
@@ -271,8 +259,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="12" />
-    <option name="y" value="71" />
+    <option name="x" value="-3" />
+    <option name="y" value="25" />
     <option name="width" value="1386" />
     <option name="height" value="775" />
   </component>
@@ -416,6 +404,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="security-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="properties" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -449,29 +448,6 @@
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="social" type="462c0819:PsiDirectoryNode" />
               <item name="qq" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security" type="b2602c69:ProjectViewProjectNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="security-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="social" type="462c0819:PsiDirectoryNode" />
-              <item name="weixin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security" type="b2602c69:ProjectViewProjectNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="security-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="social" type="462c0819:PsiDirectoryNode" />
-              <item name="weixin" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -483,7 +459,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="social" type="462c0819:PsiDirectoryNode" />
-              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="qq" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -496,33 +472,61 @@
               <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="social" type="462c0819:PsiDirectoryNode" />
               <item name="weixin" type="462c0819:PsiDirectoryNode" />
-              <item name="connect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="security" type="b2602c69:ProjectViewProjectNode" />
               <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="security-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security" type="b2602c69:ProjectViewProjectNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="security-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security" type="b2602c69:ProjectViewProjectNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="security-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security" type="b2602c69:ProjectViewProjectNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="security-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="security-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="social" type="462c0819:PsiDirectoryNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="security-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="security-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="security-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="security-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="security-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="security" type="b2602c69:ProjectViewProjectNode" />
@@ -530,39 +534,6 @@
               <item name="security-demo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lihang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security" type="b2602c69:ProjectViewProjectNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="security-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lihang" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security" type="b2602c69:ProjectViewProjectNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="security-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lihang" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security" type="b2602c69:ProjectViewProjectNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="security-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lihang" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="security" type="b2602c69:ProjectViewProjectNode" />
@@ -571,22 +542,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="security" type="b2602c69:ProjectViewProjectNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="security-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -598,7 +560,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="Jdbc&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE-sources.jar!/org/springframework/social/connect/jdbc/JdbcConnectionRepository.java&#10;getUserConnectionRe&#9;PSI&#9;JAVA://com.lihang.security.core.social.qq.config.QQAutoConfig#getUsersConnectionRepository&#10;UserConnectionRe&#9;PSI&#9;JAVA://org.springframework.social.connect.UsersConnectionRepository&#10;JdbcConnection&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE-sources.jar!/org/springframework/social/connect/jdbc/JdbcConnectionRepository.java&#10;toUserId&#9;PSI&#9;JAVA://org.springframework.social.security.SocialAuthenticationProvider#toUserId&#10;toUser&#9;PSI&#9;JAVA://org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler&#10;SocialAuthenticationPro&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SocialAuthenticationProvider.class&#10;findUserIdsWith&#9;PSI&#9;JAVA://org.springframework.social.connect.UsersConnectionRepository#findUserIdsWithConnection&#10;syntax&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.regexp.joni.Lexer#syntax&#10;BadSqlGrammarException&#9;PSI&#9;JAVA://org.springframework.jdbc.BadSqlGrammarException&#10;sql-error-codes.xml&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/spring-jdbc/4.3.10.RELEASE/spring-jdbc-4.3.10.RELEASE.jar!/org/springframework/jdbc/support/sql-error-codes.xml&#10;providerId&#9;PSI&#9;JAVA://com.lihang.security.browser.support.SocialUserInfo#providerId&#10;SocialAu&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SocialAuthenticationFilter.class&#10;SpringSocialCOnfigurer&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SpringSocialConfigurer.class&#10;SocialAuthentication&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SocialAuthenticationFilter.class" />
+    <property name="SearchEverywhereHistoryKey" value="ConnectCOntroller&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-web/1.1.4.RELEASE/spring-social-web-1.1.4.RELEASE.jar!/org/springframework/social/connect/web/ConnectController.class&#10;connectedView&#9;PSI&#9;JAVA://org.springframework.social.connect.web.ConnectController#connectedView&#10;Jdbc&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE-sources.jar!/org/springframework/social/connect/jdbc/JdbcConnectionRepository.java&#10;getUserConnectionRe&#9;PSI&#9;JAVA://com.lihang.security.core.social.qq.config.QQAutoConfig#getUsersConnectionRepository&#10;UserConnectionRe&#9;PSI&#9;JAVA://org.springframework.social.connect.UsersConnectionRepository&#10;JdbcConnection&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE-sources.jar!/org/springframework/social/connect/jdbc/JdbcConnectionRepository.java&#10;toUserId&#9;PSI&#9;JAVA://org.springframework.social.security.SocialAuthenticationProvider#toUserId&#10;toUser&#9;PSI&#9;JAVA://org.springframework.security.oauth2.provider.approval.TokenStoreUserApprovalHandler&#10;SocialAuthenticationPro&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SocialAuthenticationProvider.class&#10;findUserIdsWith&#9;PSI&#9;JAVA://org.springframework.social.connect.UsersConnectionRepository#findUserIdsWithConnection&#10;syntax&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.regexp.joni.Lexer#syntax&#10;BadSqlGrammarException&#9;PSI&#9;JAVA://org.springframework.jdbc.BadSqlGrammarException&#10;sql-error-codes.xml&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/spring-jdbc/4.3.10.RELEASE/spring-jdbc-4.3.10.RELEASE.jar!/org/springframework/jdbc/support/sql-error-codes.xml&#10;providerId&#9;PSI&#9;JAVA://com.lihang.security.browser.support.SocialUserInfo#providerId&#10;SocialAu&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SocialAuthenticationFilter.class&#10;SpringSocialCOnfigurer&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SpringSocialConfigurer.class&#10;SocialAuthentication&#9;FILE&#9;jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SocialAuthenticationFilter.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="E:/Download/security-feature-5-07" />
@@ -831,7 +793,10 @@
       <workItem from="1575529519293" duration="17932000" />
       <workItem from="1575549252894" duration="1775000" />
       <workItem from="1575771078265" duration="6468000" />
-      <workItem from="1575789968089" duration="1650000" />
+      <workItem from="1575789968089" duration="7784000" />
+      <workItem from="1575799960370" duration="2957000" />
+      <workItem from="1575856822846" duration="4685000" />
+      <workItem from="1575941505898" duration="727000" />
     </task>
     <servers />
   </component>
@@ -868,7 +833,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181437000" />
+    <option name="totallyTimeSpent" value="195940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
@@ -884,17 +849,17 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47311828" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4347158" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.70353305" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47663552" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31543118" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24583964" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -939,389 +904,449 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="25" />
+      <option name="time" value="40" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/JAR/repository/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar!/ch/qos/logback/classic/Logger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="610" selection-start-line="610" selection-end-line="610" />
+    <entry file="uml://JIGSAW/spring.security.core">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JIGSAW</ID>
+          <OriginalElement>spring.security.core</OriginalElement>
+          <nodes>
+            <node x="" y="">spring.security.core</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="73.0" y="16.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/JAR/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar!/org/apache/commons/logging/impl/SLF4JLocationAwareLog.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+    <entry file="uml://JAVA/org.springframework.security.core.userdetails.UserDetails">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.core.userdetails.UserDetails</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.security.core.userdetails.UserDetails</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="57.0" y="56.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/JAR/repository/com/alibaba/druid/1.1.9/druid-1.1.9.jar!/com/alibaba/druid/pool/DruidDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="1208" selection-start-line="1208" selection-end-line="1208" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/spring-tx/4.3.10.RELEASE/spring-tx-4.3.10.RELEASE.jar!/org/springframework/transaction/support/TransactionSynchronizationManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/spring-jdbc/4.3.10.RELEASE/spring-jdbc-4.3.10.RELEASE.jar!/org/springframework/jdbc/datasource/DataSourceUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/com/alibaba/druid/1.1.9/druid-1.1.9.jar!/com/alibaba/druid/pool/DruidConnectionHolder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="197" selection-start-line="197" selection-end-line="197" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/com/alibaba/druid/1.1.9/druid-1.1.9.jar!/com/alibaba/druid/pool/DruidAbstractDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="1818" selection-start-line="1818" selection-end-line="1818" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/com/alibaba/druid/1.1.9/druid-1.1.9.jar!/com/alibaba/druid/pool/DruidPooledConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="307" selection-start-line="307" selection-end-line="307" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/spring-jdbc/4.3.10.RELEASE/spring-jdbc-4.3.10.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="405" selection-start-line="405" selection-end-line="405" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/FilterChainProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/filter/RequestContextFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/boot/spring-boot-actuator/1.5.6.RELEASE/spring-boot-actuator-1.5.6.RELEASE.jar!/org/springframework/boot/actuate/autoconfigure/MetricsFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/spring-web/4.3.10.RELEASE/spring-web-4.3.10.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16.jar!/org/apache/catalina/core/StandardWrapperValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3726">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16.jar!/org/apache/catalina/core/StandardContextValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16.jar!/org/apache/catalina/authenticator/AuthenticatorBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6399">
-          <caret line="317" selection-start-line="317" selection-end-line="317" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16.jar!/org/apache/catalina/core/StandardHostValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1269">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16.jar!/org/apache/catalina/connector/Response.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3807">
-          <caret line="200" selection-start-line="200" selection-end-line="200" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16.jar!/org/apache/catalina/connector/OutputBuffer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/QQProperties.java">
+    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SocialUserDetailsService.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE.jar!/org/springframework/boot/autoconfigure/social/SocialProperties.class">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JAR/repository/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetails.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SocialUserDetails.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.social.security.SocialUserDetails">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.social.security.SocialUserDetails</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.security.core.userdetails.UserDetails</node>
+            <node x="" y="">org.springframework.social.security.SocialUserDetails</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="74.0" y="97.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.social.security.SocialUser">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.social.security.SocialUser</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.security.core.CredentialsContainer</node>
+            <node x="" y="">org.springframework.social.security.SocialUser</node>
+            <node x="" y="">org.springframework.security.core.userdetails.UserDetails</node>
+            <node x="" y="">org.springframework.security.core.userdetails.User</node>
+            <node x="" y="">org.springframework.social.security.SocialUserDetails</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="175.0" y="137.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-security/1.1.4.RELEASE/spring-social-security-1.1.4.RELEASE.jar!/org/springframework/social/security/SocialUser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JAR/repository/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE.jar!/org/springframework/security/core/userdetails/User.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/security/MyUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/service/impl/HelloServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/service/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/volidator/MyConstraint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/WeixinProperties.java">
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/volidator/MyConstraintValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        <state relative-caret-position="108">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/SocialProperties.java">
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/aspect/TimeAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/controller/ControllerExcetionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/filter/TimeFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/web/interceptor/TimeInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/wiremock/MockServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/LoginResponseType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/security-demo/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="22" column="75" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+        <state relative-caret-position="297">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-demo/src/main/resources/static/demoLogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE.jar!/org/springframework/social/connect/jdbc/JdbcUsersConnectionRepository.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/SocialConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/MySpringSocialConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-752">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE-sources.jar!/org/springframework/social/connect/UsersConnectionRepository.java">
+    <entry file="jar://E:/JAR/repository/com/fasterxml/jackson/core/jackson-databind/2.8.9/jackson-databind-2.8.9.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <caret line="1188" column="18" selection-start-line="1188" selection-start-column="18" selection-end-line="1188" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-demo/src/main/java/com/lihang/security/DemoConnectionSignUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE-sources.jar!/org/springframework/social/connect/ConnectionSignUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-config/1.1.4.RELEASE/spring-social-config-1.1.4.RELEASE.jar!/org/springframework/social/config/annotation/SocialConfigurerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE.jar!/org/springframework/boot/autoconfigure/social/SocialAutoConfigurerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE-sources.jar!/org/springframework/social/connect/jdbc/JdbcConnectionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE-sources.jar!/org/springframework/social/connect/jdbc/JdbcUsersConnectionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1215">
-          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/MyJdbcUsersConnectionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1917">
-          <caret line="89" column="46" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/QQAutoConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/qq/config/MyJdbcConnectionRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinOAuth2Template.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/api/Weixin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE-sources.jar!/org/springframework/social/oauth2/TokenStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/JAR/repository/org/springframework/social/spring-social-core/1.1.4.RELEASE/spring-social-core-1.1.4.RELEASE-sources.jar!/org/springframework/social/oauth2/AbstractOAuth2ApiBinding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/api/WeixinImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1192">
-          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-          <folding>
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/api/WeixinUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1215">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/config/WeixinAutoConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/support/SocialUserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/social/weixin/connect/WeixinAccessGrant.java">
+    <entry file="uml://JIGSAW/spring.security.web">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JIGSAW</ID>
+          <OriginalElement>spring.security.web</OriginalElement>
+          <nodes>
+            <node x="" y="">spring.security.web</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="72.0" y="16.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.web.savedrequest.SavedRequest">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.web.savedrequest.SavedRequest</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.security.web.savedrequest.SavedRequest</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="65.0" y="56.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.security.web.savedrequest.HttpSessionRequestCache">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.security.web.savedrequest.HttpSessionRequestCache</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.security.web.savedrequest.RequestCache</node>
+            <node x="" y="">org.springframework.security.web.savedrequest.HttpSessionRequestCache</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="100.0" y="56.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JAR/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/savedrequest/HttpSessionRequestCache.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        <state relative-caret-position="108">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JAR/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/RedirectStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JAR/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/DefaultRedirectStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JAR/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/savedrequest/SavedRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JAR/repository/org/springframework/security/spring-security-web/4.2.3.RELEASE/spring-security-web-4.2.3.RELEASE.jar!/org/springframework/security/web/savedrequest/RequestCache.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/BrowserProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="100" selection-start-line="6" selection-start-column="100" selection-end-line="6" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/authentication/MyAuthenticationFailureHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/authentication/MyAuthenticationSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/support/SimpleResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/image/ImageValidateCodeProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/validate/code/ValidateCodeProcessorHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/resources/static/defaultRegist.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/resources/static/defaultLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/SecurityConfirg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/authentication/mobile/SmsCodeAuthenticationSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-browser/src/main/java/com/lihang/security/browser/BrowserSecurityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-core/src/main/java/com/lihang/security/core/properties/SecurityConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>

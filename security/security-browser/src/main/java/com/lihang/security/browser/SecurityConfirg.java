@@ -50,7 +50,6 @@ public class SecurityConfirg extends WebSecurityConfigurerAdapter {
     }
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        System.out.println(securityProperties.getSocial().getQq().getProviderId()+"++++++++++++++++++++");
         http.apply(validateCodeSecurityConfig)
                 .and()
              .apply(smsCodeAuthenticationSecurityConfig)

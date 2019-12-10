@@ -29,12 +29,11 @@ public class MyAuthenticationSuccessHandler extends SavedRequestAwareAuthenticat
         logger.info("登陆成功");
         if (LoginResponseType.JSON.equals(securityProperties.getBrowser().getLoginType())){
             response.setContentType("application/json;charset=utf-8");
-            //System.out.println(objectMapper.writeValueAsString(authentication));
             response.getWriter().write(objectMapper.writeValueAsString(authentication));
-            System.out.println("json");
+            logger.debug("返回json格式数据");
         }else {
             super.onAuthenticationSuccess(request,response,authentication);
-            System.out.println("redirect");
+            logger.debug("返回默认格式数据redirect");
         }
 
     }

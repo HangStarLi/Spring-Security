@@ -32,7 +32,9 @@ import java.io.IOException;
 @RestController
 public class BrowserSecurityController {
     private Logger logger = LoggerFactory.getLogger(getClass());
+    //可以获取请求里面的信息
     private RequestCache  requestCache = new HttpSessionRequestCache();
+    //重定向
     private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
     @Autowired
     private SecurityProperties securityProperties ;
@@ -56,6 +58,10 @@ public class BrowserSecurityController {
         }
         return new SimpleResponse("请跳转到登陆页");
     }
+
+    /**
+     * 获取登陆用户信息
+     */
     @Autowired
     private ProviderSignInUtils providerSignInUtils;
      @GetMapping("/social/user")

@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyUserDetailsService implements UserDetailsService,SocialUserDetailsService {
 
-    //+++++++++++++++++
+
     private org.slf4j.Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
