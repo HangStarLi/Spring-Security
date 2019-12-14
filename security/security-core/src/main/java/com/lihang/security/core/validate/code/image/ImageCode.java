@@ -12,8 +12,7 @@ public class ImageCode extends ValidateCode {
             this.image = image;
         }
 
-    public ImageCode() {
-    }
+
 
 
 

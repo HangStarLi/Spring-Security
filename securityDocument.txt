@@ -1,0 +1,35 @@
+security文档：
+一、环境
+   1、数据库中建立的表，见文件 my_userconnection.sql + persistent_login.sql
+   2、在配置文件中配置数据库连接（druid连接池）
+   3、配置端口号：server.port= 80  注：第三方登陆时，发送请求和回调地址必须一致，回调端口为80
+   4、本机host文件：127.0.0.1 www.pinzhi365.com 
+   
+二、详情
+   
+   1、登陆页面
+     1）、如果不配置，默认使用提供的登陆页面，建议自定义登陆页面，如果自定义登陆页面，请完成一下两点
+     2）、自定义登陆页面要求：请参考security-demo/resource/static/demoLogin.html
+     3）、自己的配置文件添加自定义登陆页面：lihang.security.browser.loginPage= /demoLogin.html
+   
+   2、请求如果以.html结尾将会跳转到登陆页面
+   
+   3、配置登陆请求返回值类型，JSON（默认）：返回json格式数据；REDIRECT：使用默认的返回类型
+      lihang.security.browser.loginType= JSON
+	  
+   4、1）、图片验证码配置：
+      #验证码基本参数配置
+      #lihang.security.code.image.length= 6  ;验证码长度
+      #lihang.security.code.image.width= 200 ;验证码图形长度
+     
+      2）、图片验证码生成逻辑可配置beanName:imageValidateCodeGenerator,必须继承ValidateCodeGenerator，返回ImageCode
+   
+   5、短信验证码发送机制可配置：默认直接后台打印；自定义：继承SmsCodeSender，实现send方法
+   
+   6、拦截请求可配置：
+       #配置需要验证码验证的请求路径
+       #lihang.security.code.image.url= /user,/user/*
+	   #lihang.security.code.sms.url= /user,/user/*
+	   
+   7、自定义UserDetailsService，继承UserDetailsService，SocialUserDetailsService
+       ，对登陆密码需进行加密，具体请参考security-demo下MyUserDetailsService类

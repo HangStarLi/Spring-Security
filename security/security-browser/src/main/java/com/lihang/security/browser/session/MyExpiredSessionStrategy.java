@@ -13,7 +13,8 @@ public class MyExpiredSessionStrategy extends AbstractSessionStrategy implements
 
     @Override
     public void onExpiredSessionDetected(SessionInformationExpiredEvent sessionInformationExpiredEvent) throws IOException, ServletException {
-        //这个event中保存了request和response
+
+        //这个event中保存跳转之前的request和response
         onSessionInvalid(sessionInformationExpiredEvent.getRequest(),sessionInformationExpiredEvent.getResponse());
         //sessionInformationExpiredEvent.getResponse().setContentType("application/json;charset=utf-8");
         //sessionInformationExpiredEvent.getResponse().getWriter().write("您的账号在异地登陆");

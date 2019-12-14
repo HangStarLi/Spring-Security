@@ -1,0 +1,12 @@
+1、springSecurity的配置类，须继承WebSecurityConfigurerAdapter，重写configure方法  
+
+2、打印日志，尽量不使用System.out.print 
+   private Logger logger = LoggerFactory.getLogger(getClass());
+   logger.info("this is log test");
+   
+3、获取请求里面的信息
+    private RequestCache  requestCache = new HttpSessionRequestCache();
+ 
+4、重定向
+    private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy(); 
+	

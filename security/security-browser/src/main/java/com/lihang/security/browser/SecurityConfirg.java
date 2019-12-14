@@ -65,15 +65,21 @@ public class SecurityConfirg extends AbstractChannelSecurityConfig {
                 .and()
                 .apply(mySocialConfig)
                 .and()
-             .sessionManagement()
-                .invalidSessionStrategy(invalidSessionStrategy)
+            .sessionManagement()
+                //session失效后跳转的URL
+                //.invalidSessionUrl("/session/invalid")
                 //.invalidSessionUrl(securityProperties.getBrowser().getSession().getSessionInvalidUrl())
+                .invalidSessionStrategy(invalidSessionStrategy)
+                //最大登陆数量
                 .maximumSessions(securityProperties.getBrowser().getSession().getMaxmumSessions())
                 //session达到最大数量时，阻止后面的用户登陆
+                //.maxSessionsPreventsLogin(true)
                 .maxSessionsPreventsLogin(securityProperties.getBrowser().getSession().getMaxSessionPreventsLogin())
+                //第一个用户被挤下后，记录跳转到/session/invalid这个请求之前的请求
+                //.expiredSessionStrategy(new MyExpiredSessionStrategy())
                 .expiredSessionStrategy(sessionInformationExpiredStrategy)
                 .and()
-                .and()
+               .and()
             .rememberMe()
                 .tokenRepository(persistentTokenRepository())
                 .tokenValiditySeconds(securityProperties.getBrowser().getRemermberMeSeconds())

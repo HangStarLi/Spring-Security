@@ -1,9 +1,10 @@
 package com.lihang.security.core.validate.code;
 
 import java.awt.image.BufferedImage;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class ValidateCode {
+public class ValidateCode implements Serializable {
     private String code;
     private LocalDateTime expireTime;
 
@@ -11,10 +12,10 @@ public class ValidateCode {
         this.code = code;
         this.expireTime = LocalDateTime.now().plusSeconds(expireTime);
     }
-
-    public ValidateCode() {
+    public ValidateCode(String code, LocalDateTime expireTime){
+        this.code = code;
+        this.expireTime = expireTime;
     }
-
 
     public boolean isExpired() {
         return LocalDateTime.now().isAfter(expireTime);
